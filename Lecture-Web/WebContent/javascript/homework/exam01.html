@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+   let inputNum = prompt("10~100사이의 숫자를 입력하세요!")
+   console.log(inputNum)
+
+   let str = ''
+   for (var i = 1; i <= inputNum; i++) {
+      if (i % 10 % 3 == 0 || i > 10 && parseInt(i / 10) % 3 == 0) {
+         if (parseInt(i % 10) == 0) {
+            if (parseInt(i / 10) % 3 == 0) {
+               document.write('짝')
+            }
+            str += '뽀'
+            document.write(str + '숑')
+         } else {
+            document.write('짝')
+         }
+      } else {
+         document.write(i)
+      }
+      document.write('<br>')
+   }
+   /*
+   if (i % 10 == 0) {
+   
+    }
+    */
+   /*  
+    10~100사이의 숫자를 입력하세요 : 32
+    1
+    2
+    짝
+    4
+    5
+    짝
+    7
+    8
+    짝
+    뽀숑
+    11
+    12
+    짝
+    ...
+    18
+    짝
+    뽀뽀숑
+    ...
+    28
+    짝
+    짝뽀뽀뽀숑
+    짝
+    짝
+    */
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+let a = 10
+let b = 20
+let c= 30
+alert(`a : ${ a }, b : ${ b }, c : ${ c }`)
+{
+	let a = 30
+	alert(`a : ${ a }, b : ${ b }, c : ${ c }`)
+	}
+alert(`a : ${ a }, b : ${ b }, c : ${ c }`)
+
+
+/*let과 var의 차이점.  */
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

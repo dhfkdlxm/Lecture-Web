@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+   data = prompt('정수를 하나 입력하세요!')
+  alert(data)
+</script>
+
+
+</head>
+<body>
+
+</body>
+</html>

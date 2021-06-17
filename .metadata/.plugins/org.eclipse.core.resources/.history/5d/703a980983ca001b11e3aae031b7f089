@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+/* let cnt = 1
+while(cnt<=5){
+	document.write('hello<br>')
+	cnt ++
+}
+
+for(let cnt = 1; cnt <= 5 ; cnt++){
+	document.write('hello<br>')
+} */
+let cnt = 1
+	do {
+		document.write('hello<br>')
+	}while(cnt <= 5)
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	if(confirm("네이버로 이동하시겠습니까?")){
+		
+	}
+
+</script>
+</head>
+<body>
+</body>
+</html>

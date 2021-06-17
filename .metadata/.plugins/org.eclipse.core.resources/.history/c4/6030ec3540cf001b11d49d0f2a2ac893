@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+div {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+}
+</style>
+<script type="text/javascript" src="/Lecture-Web/jquery/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+
+</script>
+</head>
+<body>
+<div>
+<div class="">일</div>
+<div>월</div>
+<div>화</div>
+<div>수</div>
+<div>목</div>
+<div>금</div>
+<div>토</div>
+</div>
+</body>
+</html>

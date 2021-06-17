@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+let a = 10
+let b = 20
+
+const data = ' hello '
+alert(`a : ${ a }, b : ${ b }`)
+
+a = 50
+alert(`a : ${ a }, b : ${ b }`)
+alert(` data : ${ data } `)
+//data = '안녕하세요' // 오류 발생!!!
+{
+	let a = 30
+	let c= 30
+	alert(`a : ${ a }, b : ${ b }, c : ${ c }`)
+	}
+alert(`a : ${ a }, b : ${ b }, c : ${ c }`) // 오류발생
+
+
+/*let과 var의 차이점.  */
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

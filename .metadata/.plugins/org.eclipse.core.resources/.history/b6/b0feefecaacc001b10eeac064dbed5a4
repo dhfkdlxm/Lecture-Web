@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	testFunction()//호이스팅 발생
+	function testFunction(){
+		alert('testFunction() 호출 ...')
+	}
+	
+	
+   function testFunction01(data){
+	   alert('data : ' + data)
+   }
+
+	
+	
+	
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

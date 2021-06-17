@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	/*
+	 BOM(브라우저 객체 모델)
+	  - window		: 브라우저의 최상의 객체(윈도우 객체)
+	 		- location : 주소와 관련된 것!(주소창에)
+	 		- screen	 : 창 크기 확대 축소
+	 		- history  : 앞으로 / 뒤로가기
+	 		- document : body에 뭔갈 써줘서 보여주는 것!
+	 		- navigator :
+	 */
+
+	window.alert('hello')
+	let sub = window.open("", "", "width=500, height=400")//팝업창을 띄워주는 함수
+	if (!sub) {
+		alert('팝업창 옵션을 확인하세요!!!!')
+	}
+	sub.moveTo(100, 100)//left top을 기준으로 움직여라!
+
+	setInterval(function() {
+		sub.moveBy(10, 10)
+	}, 1000)
+</script>
+</head>
+<body>
+
+</body>
+</html>

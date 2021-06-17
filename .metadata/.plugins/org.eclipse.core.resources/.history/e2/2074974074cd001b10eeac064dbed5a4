@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//Class 개념!
+	
+	class Person{
+		
+	}
+	
+	
+	let p = new Person()
+	console.log(p)
+//	let p = new Person('홍길동', '010-4225-3870', ' 경기도광명시')
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+header {
+	background-color: red;
+	height: 100px
+}
+
+#left-aside {
+	background-color: green;
+	height: 600px;
+	float: left;
+}
+
+#center-up {
+	background-color: blue;
+}
+
+#center-down {
+	background-color: orange;
+}
+
+#right-aside {
+	background-color: pink;
+}
+
+footer {
+	background-color: gray;
+	height: 100px;
+	clear: both;
+}
+</style>
+</head>
+<body>
+	<!-- 
+	 header	 :  사이트명 , 로고
+	 nav		 :  사이트의 메뉴, 포함 
+	 section 	 : 	문서의 주요 내용을 포함
+	 article 	 : 	문서의 주요내용이 긴경우 세부적으로 구분
+	 aside 	 :  문서의 주요 내용에 옆에 배치되는 내용
+	 footer 	 :  문서의 정보, 저작권, 부가정보
+
+ -->
+	<header>헤더</header>
+	<aside id='left-aside'>왼쪽</aside>
+	<section>
+		<article id='center-up'>가운데위</article>
+		<article id='center-down'>가운데아래</article>
+	</section>
+	<aside id='right-aside'>오른쪽</aside>
+	<footer>아래</footer>
+</body>
+</html>

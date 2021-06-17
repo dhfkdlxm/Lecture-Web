@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function func(num1, num2, num3) {
+		alert(` num1 : ${ num1 }, num2 : ${ num2 }, num3 : ${ num3 } `)
+	}
+	//기존!	
+	//fun() →  num 1, 2, 3 : undefined
+	//fun(100) →  num 2, 3 : undefined
+	//fun(100, 200) →  num 3 : undefined
+	//func(100, 200, 300)
+	
+	
+	//자바스크립트는 0이아닌 모든 정수를 true 로 인식
+	//undefined = false로 인식
+	function func(num1, num2, num3) {
+		
+		
+		
+		
+		alert(` num1 : ${ num1 }, num2 : ${ num2 }, num3 : ${ num3 } `)
+	}
+</script>
+
+
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	input[type=password]{
+	background-color : purple;
+	}
+	img{
+	width:100px;
+	height: 100px;
+	}
+	
+</style>
+</head>
+<body>
+	<form>
+	아이디 : <input type="text"><br>
+	패스워드 : <input type = "password"><br>
+	</form>
+	<br>
+	<img src="images/cat.jpg">
+	
+
+
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.starImg {
+	width:30px;
+	height:30px;
+}
+#korea{
+	position: absolute;
+	top : 180px;
+	right:180px
+}
+</style>
+<script type="text/javascript">
+	function checkTime(country) {
+		let btn = document.getElementById('btn02')
+	}
+</script>
+</head>
+<body>
+	<div id="imgDiv">
+		<img src="img/worldmap.png"> 
+		<img src="img/star.png"	onclick="checkTime('korea')" class="starImg" id = "korea">
+		<img src="img/star.png"	onclick="checkTime('america')" class="starImg" id = "america">
+		<img src="img/star.png"	onclick="checkTime('africa')" class="starImg" id = "africa">
+		<img src="img/star.png"	onclick="checkTime('brizil')" class="starImg" id = "brizil">
+	</div>
+</body>
+</html>

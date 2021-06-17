@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function add(char) {
+    var display = document.getElementById('display');
+    display.value = display.value + char;
+
+}
+
+function calculate() {
+    var display = document.getElementById('display');
+    var result = eval(display.value);
+    document.getElementById('display').value = result;
+}
+
+function aclear() {
+    document.getElementById('display').value = "";
+   
+}
+</script>
+<style type="text/css">
+table {
+   border: 1px ridge #444444;
+}
+
+th, td {
+   border: 1px ridge #444444;
+   text-align: center
+}
+
+#cal-equal {
+   width: 100%;
+}
+
+#cal-clear {
+   width: 100%;
+}
+</style>
+
+
+</head>
+<body>
+   <table>
+      <thead id="cal-h">
+         <tr>
+            <td colspan="4"><input type="text" id="display"></td>
+         </tr>
+      </thead>
+      <tbody id="cal-b">
+         <tr>
+            <td><input type="button" value="7" onclick="add('7')" /></td>
+            <td><input type="button" value="8" onclick="add('8')" /></td>
+            <td><input type="button" value="9" onclick="add('9')" /></td>
+            <td><input type="button" value="/" onclick="add('/')" /></td>
+         </tr>
+         <tr>
+            <td><input type="button" value="4" onclick="add('4')" /></td>
+            <td><input type="button" value="5" onclick="add('5')" /></td>
+            <td><input type="button" value="6" onclick="add('6')" /></td>
+            <td><input type="button" value="*" onclick="add('*')" /></td>
+         </tr>
+         <tr>
+            <td><input type="button" value="1" onclick="add('1')" /></td>
+            <td><input type="button" value="2" onclick="add('2')" /></td>
+            <td><input type="button" value="3" onclick="add('3')" /></td>
+            <td><input type="button" value="-" onclick="add('-')" /></td>
+         </tr>
+         <tr>
+            <td><input type="button" value="0" onclick="add('0')" /></td>
+            <td><input type="button" value="." onclick="add('.')" /></td>
+            <td><input type="button" value="+" onclick="add('+')" /></td>
+            <td><input type="button" value="%" onclick="add('%')" /></td>
+         </tr>
+         <tr>
+            <td colspan="2"><input type="button" value="="
+               onclick="calculate()" /></td>
+            <td colspan="2"><input type="button" value="Clear"
+               onclick="aclear()" id="cal-clear" /></td>
+         </tr>
+
+
+      </tbody>
+
+   </table>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload = function() {
+		//이어서 써지는 것이아닌,  Body를 로딩이 끝났기 때문에, 
+		//덮어쓰기가됨.! 따라서 JAVA SCRIPT 멘트만 나옴!!
+		//	document.write('<h1>JAVASCRIPT!</h1>')
+
+		//window.onload를 사용하지 않고 호출하게되면 오류가됨!!! → Body가 다 로딩되고 난 다음에 호출필요!
+		alert('innerText : ' + document.body.innerText) //body안의 text만 추출
+		alert('innerHTML : ' + document.body.innerHTML)//body안의 태그까지 호출
+		
+		let list = ''
+		list += '<ul>'
+		list += '<li>aaa</li>'
+		list += '<li>bbb</li>'
+		list += '<li>ccc</li>'
+		list += '</ul>'
+		
+		
+		
+	}
+</script>
+</head>
+<body>
+
+	안녕하세요
+	<br>
+	<h1>hello</h1>
+
+</body>
+</html>

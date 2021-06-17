@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+body {
+   /*background-color: navy;*/
+   background-image: url('img/worldmap.jpg');
+   background-repeat: no-repeat;
+   background-position: 30px 30px;
+   background-size: auto;
+}
+
+.local-star {
+   width: 30px;
+   height: 50px;
+}
+#서울{
+   position: absolute;
+   top: 400px;
+   left: 510px;
+}
+#뉴욕{
+   position: absolute;
+   top: 400px;
+   right: 310px;
+}
+#파리{
+   position: absolute;
+   top: 370px;
+   left: 80px;
+}
+#중국{
+   position: absolute;
+   top: 450px;
+   left: 470px;
+}
+
+a:hover {
+   cursor: pointer;
+}
+a span{
+   font-weight:bold;
+}
+</style>
+
+<script type="text/javascript">
+   function checkTime(local) {
+      console.log(local)
+      let time = ''
+      let msg = ''
+      switch (local) {
+      case '서울':
+         time = getWorldTime(+9)
+         break;
+      case '뉴욕':
+         time = getWorldTime(-8)
+         break;
+      case '중국':
+         time = getWorldTime(+8)
+         break;
+      case '파리':
+         time = getWorldTime(+2)
+         break;
+      }
+      msg = local + '시간 : ' + time
+      alert(msg)
+   }
+   
+   
+   function getWorldTime(tzOffset) { // 24시간제
+      var now = new Date();
+      var tz = now.getTime() + (now.getTimezoneOffset() * 60000) + (tzOffset * 3600000);
+      now.setTime(tz);
+
+      var s = leadingZeros(now.getFullYear(), 4) +
+         '-' + leadingZeros(now.getMonth() + 1, 2) +
+         '-' + leadingZeros(now.getDate(), 2) +
+         ' ' + leadingZeros(now.getHours(), 2) +
+         ':' + leadingZeros(now.getMinutes(), 2) +
+         ':' + leadingZeros(now.getSeconds(), 2);
+
+      return s;
+   }
+   function leadingZeros(n, digits) {
+      var zero = '';
+      n = n.toString();
+
+      if (n.length < digits) {
+         for (i = 0; i < digits - n.length; i++) zero += '0';
+      }
+      return zero + n;
+   }
+</script>
+
+</head>
+<body>
+
+
+
+</body>
+<div>
+<img alt="" src="img/worldmap.jpg">
+   <a onclick="checkTime(this.id)" id = "서울"><img src="img/star2.png"
+      class="local-star"><span>서울</span></a>
+   <a onclick="checkTime(this.id)" id = "뉴욕"><img src="img/star2.png"
+      class="local-star"><span>뉴욕</span></a>
+   <a onclick="checkTime(this.id)" id = "중국"><img src="img/star2.png"
+      class="local-star"><span>중국</span></a>
+   <a onclick="checkTime(this.id)" id = "파리"><img src="img/star2.png"
+      class="local-star"><span>파리</span></a>
+      
+</div>
+</html>

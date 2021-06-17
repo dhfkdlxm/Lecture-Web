@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	let str = 'alert("Hello");'
+	str += 'var number = 10;'
+	str += 'alert(number);'
+	str += 'let array = [10,12.34,"ABC", true];'
+	str += 'alert("배열의 원소 개수  : " + array.length);'
+	
+	eval(str)
+	number += 100
+	alert(number)
+</script>
+</head>
+<body>
+
+</body>
+</html>

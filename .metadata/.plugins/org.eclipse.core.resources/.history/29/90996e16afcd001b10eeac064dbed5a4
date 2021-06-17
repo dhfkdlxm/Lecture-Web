@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload = function() {
+		let id = document.getElementById('id')
+	//	id.remove()   exploror에서 안먹힘!
+		id.parentNode.removeChile(id)
+	}
+</script>
+</head>
+<body>
+	<table style="width: 100; height: 100;" border="1">
+		<tr>
+			<td id="id">ID</td>
+		</tr>
+		<tr>
+			<td>PASSWORD</td>
+		</tr>
+
+	</table>
+</body>
+</html>

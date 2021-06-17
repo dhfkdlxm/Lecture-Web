@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	let d = new Date()
+	console.log(d)
+
+	//오늘은 2021년 6월 15일 화요일 입니다.
+
+	String.prototype.changeStr = function() {
+		//자바 스크립트에는 CSS와 관련된 기능이 포함되어있음!
+		return this.bold().fontcolor('red').fontsize('20pt').link(
+				'http://www.naver.com')
+	}
+
+	//교수님 방법
+	Date.prototype.today = function() {
+		let year = this.getFullYear()
+		let month = this.getMonth() + 1
+		let date = this.getDate()
+		let day = this.getDay()
+		let week = [ '일', '월', '화', '수', '목', '금', '토' ]
+		return `오늘은 ${year}년 ${month}월 ${date}일 ${week[day]} 입니다.`
+	}
+
+	//내방법
+	Date.prototype.today2 = function() {
+		let day = [ '일', '월', '화', '수', '목', '금', '토' ]
+		return '오늘은 ' + this.getFullYear() + '년 ' + (this.getMonth()+1) + '월 '
+				+ day[Number(this.getDay())] + '요일 입니다.'
+
+	}
+	alert(d.today2())
+
+	let d2 = new Date(2000, 12 - 1, 25)
+	alert(d2.today())
+</script>
+</head>
+<body>
+
+</body>
+</html>

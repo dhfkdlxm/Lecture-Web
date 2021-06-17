@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+table {
+	border: 1px ridge #444444;
+	width: 80%;
+	text-align: center;
+}
+
+th, td {
+	border: 1px ridge #444444;
+	text-align: center
+}
+
+.atag {
+	text-align: left;
+}
+</style>
+</head>
+<body>
+	<hr>
+	<div id = "title">
+		<h2>게시판 목록</h2>
+	</div>
+	<div>
+		<table>
+			<thead>
+				<tr>
+					<th>번호</th>
+					<th>제목</th>
+					<th>글쓴이</th>
+					<th>등록일</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>46</td>
+					<td class="atag"><a href="detailBoard.html">동적인 글</a></td>
+					<td>테스터</td>
+					<td>2021-06-11</td>
+				</tr>
+				<tr>
+					<td>45</td>
+					<td class="atag"><a href="detailBoard.html">자바제목</a></td>
+					<td>JDBC</td>
+					<td>2021-06-11</td>
+				</tr>
+				<tr>
+					<td>44</td>
+					<td class="atag"><a href="detailBoard.html">자바제목</a></td>
+					<td>JDBC</td>
+					<td>2021-06-11</td>
+				</tr>
+				<tr>
+					<td>43</td>
+					<td class="atag"><a href="detailBoard.html">자바제목</a></td>
+					<td>JDBC</td>
+					<td>2021-06-11</td>
+				</tr>
+			</tbody>
+		</table>
+
+	</div>
+	<hr>
+
+</body>
+</html>

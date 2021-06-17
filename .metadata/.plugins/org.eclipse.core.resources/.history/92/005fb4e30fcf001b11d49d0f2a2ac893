@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#content {
+	height: 50px;
+	background-color: pink;
+}
+
+#menu {
+	height: 100px;
+	background-color: yellow;
+	/* 
+		margin : (top&bottom) (left&right) 
+		margin : top right bottom left(시계방향)   
+		margin-top
+		margin-botton
+		margin-left
+		margin-right
+		//padding도 동일
+	 */
+	margin: 0 20px;
+	padding: 20px;
+	display: none;
+}
+</style>
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#content').mouseenter(function(){
+			$('#menu').fadein(2000)
+		})
+	})
+</script>
+</head>
+<body>
+	<div id="content">마우스를 접근시켜 보세요</div>
+	<div id="menu">메뉴화면 입니다.</div>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+div {
+	width: 100px;
+	margin: 10px;
+	padding: 10px;
+	border-color: blue;
+	border-width: 3px;
+}
+
+#div01 {
+	border-style: solid
+}
+
+#div02 {
+	border-style: dotted;
+}
+
+#div03 {
+	border-style: dashed;
+}
+
+#div04 {
+	border-style: outset;
+}
+
+#div05 {
+	border-style: groove;
+}
+
+#div06 {
+	border-style: inset;
+}
+</style>
+</head>
+<body>
+	<div id="div01">사각형1</div>
+	<div id="div02">사각형2</div>
+	<div id="div03">사각형3</div>
+	<div id="div04">사각형4</div>
+	<div id="div05">사각형5</div>
+	<div id="div06">사각형6</div>
+
+
+</body>
+</html>

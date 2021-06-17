@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+div {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	position: absolute;
+}
+</style>
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		//애니매이션 효과를 낼수있음 animiate(어떤효과?,몇초에 걸쳐서?, 애니메이션이 끝나면~실행할 콜백함수)
+		/* 		$('div').animate({
+		 'width' : '+=200px',
+		 'height' : '200px',
+		 left : '100px',
+		 top : '50px',
+		 opacity : '0.6'
+		 }, 2000) */
+
+		$('div').animate({
+			width : '200px'
+		})
+		$('div').animate({
+			left : '100px',
+			opacity : '0.3'
+		}, 2000)
+		$('div').animate({
+			width : '100px',
+			height : '200px',
+			opacity : '0.7'
+		}, 3000)
+		
+		//animate에서는 색깔을 변경하는 속성은 없다!, 따라서 뒤에 animate가끝난뒤에 실행하라고하는 콜백함수정의!!
+		$('div').animate({
+			height : '100px',
+			top : '100px',
+			left : '0px',
+			opacity : '1'
+		})
+	})
+</script>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

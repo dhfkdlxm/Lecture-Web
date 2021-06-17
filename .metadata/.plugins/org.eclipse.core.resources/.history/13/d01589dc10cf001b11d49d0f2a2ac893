@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+div {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+}
+</style>
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		//애니매이션 효과를 낼수있음 animiate(어떤효과?,몇초에 걸쳐서?)
+		$('div').animate({
+			'width' : '200px'
+			
+		},2000)
+	})
+</script>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

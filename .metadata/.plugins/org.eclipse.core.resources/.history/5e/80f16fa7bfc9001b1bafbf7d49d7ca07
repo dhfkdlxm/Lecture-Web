@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+body {
+	/*background-color: navy;*/
+	background-image: url('images/Cat.png');
+	background-repeat: no-repeat;
+	background-position: 100px 100px;
+	background-size: inherit;
+}
+</style>
+
+</head>
+<body>
+
+</body>
+</html>

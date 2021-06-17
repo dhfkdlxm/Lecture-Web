@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function Person(name, phone, addr){
+		this.name = name
+		this.phone = phone
+		this.addr = addr
+	}
+	
+	Person.prototype.hobby = '영화감상'
+	Person.prototype.info = function(){
+		let msg = ''
+		for(let key in this){
+			if(key != 'info')
+			msg += key + ' : ' + this[key] + '\n'
+		}
+		alert(msg)
+	}
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

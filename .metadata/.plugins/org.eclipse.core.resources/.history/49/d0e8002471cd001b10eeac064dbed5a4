@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function Person(name, phone, addr) {
+		this.name = name
+		this.phone = phone
+		this.addr = addr
+	}
+
+
+	
+	Person.prototype.hobby = '영화감상'
+	Person.prototype.info = function() {
+		let msg = ''
+		for ( let key in this) {
+			if (key != 'info')
+				msg += key + ' : ' + this[key] + '\n'
+		}
+		alert(msg)
+	}
+	//의사를 만들건데, 의사도 사람임, 기본적인 사람 객체(Person) + 의사정보(정형, 외과등등)
+	function Doctor(name, phone, addr, major){
+		this.name = name
+		this.phone = phone
+		this.addr = addr
+		this.major = major
+	}
+	let d = new Doctor('나최고','010-3333-4444','서울시 서초구 잘고쳐병원','신경외과')
+	console.log(d)
+	//상속관계를 표현해보고싶음! Person 자체가 name, phone, addr를 가지고 있으니까 말이지!
+	//Person이 가지고 있는걸 가져다 써보고싶음(상속 사용)
+	console.log( 'd instanceof Doctor :'+ (d instanceof Doctor))  //doctor가 Doctor객체의 일부분이야?
+	console.log(d instanceof Person)  //doctor가 Person객체의 일부분이야?
+	
+	
+	
+	
+	/*
+	let p = new Person('홍길동', '010-4225-3870', ' 경기도광명시')
+	 p.info()
+	 console.log(p)*/
+</script>
+</head>
+<body>
+
+</body>
+</html>

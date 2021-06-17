@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//함수를 리턴하는 함수! 
+	function returnFunction() {
+		let f = function() {
+			alert('return function...')
+		}
+		return f
+	}
+
+	let ret = returnFunction();
+	ret()
+	returnFunction()();
+
+	function test(name) {
+		var output = 'HELLO' + name + '!!!!!!!!!'
+		return function(){
+			alert(output)
+		}
+	}
+	test('홍길동')();
+	
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

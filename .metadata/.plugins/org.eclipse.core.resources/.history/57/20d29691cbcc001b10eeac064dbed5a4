@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+//매개변수를 여러개 받고 싶을때, 하지만 매개변수가 얼마나 들어올지 모를때!
+//1. arguments  사용하기
+	function func01(){
+		alert(arguments[0] + ' : ' + arguments[1] + ' : ' + arguments[2] )
+	}
+	
+	
+//2. (...numbers) 사용하기!
+	function func02(...numbers){
+		console.log(numbers)
+		//alert(numbers[0] + ' : ' + numbers[1] + ' : ' + numbers[2] )
+		for (var i = 0; i < numbers.length; i++) {
+			alert(numbers[i] + " : ")
+		}
+	}
+	
+	function func03(a, b, ...numbers){
+		alert(`a : ${ a }, b : ${ b }, number : ${ numbers } `)
+	}
+	
+	func01(1 , 2 , 3)
+	func02(1,2,3)
+	func02(1)
+	func03(10,20, 30, 40, 50, 60)
+	
+	let array = [10, 20, 30]
+	
+	
+	
+	
+	
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	window.onload = function() {
+		let h1Tab = document.createElement('h1')
+		console.log(h1Tag)
+		//document.createElements : tag를 만들어주는 역할
+	}
+</script>
+</head>
+<body>
+	<!--  -->
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div id = "imgDiv">
+	<img src="img/worldmap.png">
+	<img src="img/star.jpg">
+	<button class="btn1" onclick="checkTime()"></button>
+</div>
+</body>
+</html>

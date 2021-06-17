@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	let nums = [ 10, 20, 30, 40, 50 ]
+	document.write('nums : ' + nums + '<br>')
+
+	/*
+	let copyNums = []
+	for(let num of nums){
+		copyNums.push(num + 100)
+	}*/
+	let copyNums = nums.map(function(element, index) {
+		if (index != 2)
+			return element + 100
+		else
+			return element
+	})
+
+	document.write('copyNums : ' + copyNums + '<br>')
+
+	nums = [ 5, 23, 1, 676, 34, 67, 8, 34, 12, 56 ]
+
+	let evenNums = nums.filter(function(element, index, array) {
+		return element % 2 == 0
+	})
+
+	document.write('nums : ' + nums + '<br>')
+	document.write('evenNums : ' + evenNums + '<br>')
+</script>
+</head>
+<body>
+
+</body>
+</html>

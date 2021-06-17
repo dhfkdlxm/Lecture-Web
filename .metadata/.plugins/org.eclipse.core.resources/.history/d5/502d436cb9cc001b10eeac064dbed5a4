@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+/*  
+	자바스크립트 내장함수
+	1. 타이머
+		setTimeOut(function, ms) : ms가 지나면  매개변수의 function을 호출하라!
+		setInterval()
+		clearInterval()
+		
+		
+	2. 
+ 
+ */
+
+ setTimeout(() => {
+	alert('일어나')
+}, milliseconds);
+
+
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

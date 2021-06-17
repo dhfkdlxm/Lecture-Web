@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//Body의 내용이 다 로딩이 끝나고 나면 스크립트 내용이 자동으로 호출되도록 OnLoad해주는것!
+	//onload라는 것은 이벤트가 발생됐다는 것임! => 뒤에 자바스크립트 함수가 호출할수 있음
+
+	function autoCall() {
+		alert('로드 완료 ')
+	}
+
+	alert('로드 완료 ')
+</script>
+</head>
+<body>
+	<h2>Hello</h2>
+	<h1>Hi</h1>
+	<img
+		src="https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png">
+	<img
+		src="https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png">
+	<img
+		src="https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png">
+	<img
+		src="https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png">
+	<img
+		src="https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png">
+</body>
+</html>

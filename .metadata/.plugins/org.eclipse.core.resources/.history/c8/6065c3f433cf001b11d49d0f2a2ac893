@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	
+})
+</script>
+</head>
+<body>
+<!-- 버튼을 눌렀을때 3번째 h1추가! -->
+<div>
+<h1>첫번째 문장</h1>
+<h1>두번째 문장</h1>
+<!-- <h1>두번째 문장</h1> -->
+</div>
+<button>문장 추가</button>
+</body>
+</html>

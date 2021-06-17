@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.starImg {
+	width:30px;
+	height:30px;
+}
+#korea{
+	position: absolute;
+	top : 180px;
+	right:180px
+}
+</style>
+<script type="text/javascript">
+	function checkTime(country) {
+		switch (country) {
+		case Seoul:
+			
+			break;
+
+		case newYork:
+			
+			break;
+		case china:
+			
+			break;
+		case paris:
+			
+			break;
+
+		}	
+		
+		
+	}
+</script>
+</head>
+<body>
+	<div id="imgDiv">
+		<img src="img/worldmap.png"> 
+		<img src="img/star.png"	onclick="checkTime('Seoul')" class="starImg" id = "Seoul">
+		<img src="img/star.png"	onclick="checkTime('newYork')" class="starImg" id = "newYork">
+		<img src="img/star.png"	onclick="checkTime('china')" class="starImg" id = "china">
+		<img src="img/star.png"	onclick="checkTime('paris')" class="starImg" id = "paris">
+	</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	let starFunc = function() {
+		$('h1')[0].innerText += '★'
+	}
+	$(document).ready(function() {
+		$('h1').click(function() {
+			console.log(argument)
+			$(this)[0].innerText += '★'
+		})
+		let pid = setInterval(function() {
+		//	$('h1').click()
+			$('h1').trigger('click', '#')
+		 //클릭이라는 행동을 하지 않아도, 한거처럼 명령을 내려 함수를 시행시킬수 있는 것. 트리거!
+		}, 1000);
+		
+		setTimeout(function(){
+			clearInterval(pid)
+		},2000)
+
+		/*
+		setInterval(function() {
+			starFunc()
+		}, 1000);
+		 내코드
+		setInterval(function() {
+			//document.getElementsByTagName('h1')[0].innerText += '★'
+			$('h1')[0].innerText += '★'
+		}, 1000);
+		 */
+	})
+</script>
+</head>
+<body>
+	<h1>start :</h1>
+</body>
+</html>

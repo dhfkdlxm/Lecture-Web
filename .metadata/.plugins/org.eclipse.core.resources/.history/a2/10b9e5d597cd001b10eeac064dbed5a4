@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	/*
+	 BOM(브라우저 객체 모델)
+	  - window		: 브라우저의 최상의 객체(윈도우 객체)
+	 		- location
+	 		- screen
+	 		- history
+	 		- document
+	 		- navigator
+	 
+	 
+	 */
+</script>
+</head>
+<body>
+
+</body>
+</html>

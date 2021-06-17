@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/Lecture-Web/jquery/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		alert('!!!')
+		//$('tr').css('background-color','yellow')
+		$('tr:even').css('background-color','pink')
+		$('tr:odd').css('background-color','yellow')
+		
+		$('h2').mouseenter(function () {
+			$(this).css('background-color', 'pink')
+		})
+		$('h2').mouseleave(function(){
+			$(this).css('background-color','white')
+		})
+		
+	})
+</script>
+</head>
+<body>
+	<h2>회원명부</h2>
+	<table border="1">
+		<tr>
+			<th>이름</th>
+			<th>전화번호</th>
+		</tr>
+		<tr>
+			<td>홍길동</td>
+			<td>010-1111-2222</td>
+		</tr>
+		<tr>
+			<td>홍길동</td>
+			<td>010-1111-2222</td>
+		</tr>
+		<tr>
+			<td>홍길동</td>
+			<td>010-1111-2222</td>
+		</tr>
+		<tr>
+			<td>홍길동</td>
+			<td>010-1111-2222</td>
+		</tr>
+		<tr>
+			<td>홍길동</td>
+			<td>010-1111-2222</td>
+		</tr>
+		<tr>
+			<td>홍길동</td>
+			<td>010-1111-2222</td>
+		</tr>
+		<tr>
+			<td>홍길동</td>
+			<td>010-1111-2222</td>
+		</tr>
+		<tr>
+			<td>홍길동</td>
+			<td>010-1111-2222</td>
+		</tr>
+		<tr>
+			<td>홍길동</td>
+			<td>010-1111-2222</td>
+		</tr>
+		<tr>
+			<td>홍길동</td>
+			<td>010-1111-2222</td>
+		</tr>
+
+
+	</table>
+</body>
+</html>

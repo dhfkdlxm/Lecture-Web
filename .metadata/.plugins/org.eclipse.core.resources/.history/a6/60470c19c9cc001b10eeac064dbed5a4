@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	let won = '1000원'
+	
+	alert(Number(won) + 500)
+	alert(parseInt(won) + 500)
+
+</script>
+</head>
+<body>
+
+
+</body>
+</html>

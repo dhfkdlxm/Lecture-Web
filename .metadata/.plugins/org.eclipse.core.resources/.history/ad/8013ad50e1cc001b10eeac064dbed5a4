@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+	function Person(n,p,a){
+		this name = n
+		let phone = p
+		let addr = a
+		
+		
+	}
+
+	let person = new Person('홍길동', '010-1111-2222', '경기도 광명시')
+	console.log(person.name)
+</script>
+</head>
+<body>
+
+</body>
+</html>

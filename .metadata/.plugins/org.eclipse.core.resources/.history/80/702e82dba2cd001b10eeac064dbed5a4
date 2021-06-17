@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload = function() {
+
+		document.write('<h1>JAVASCRIPT!</h1>')
+
+	}
+</script>
+</head>
+<body>
+	<h2>안녕하세요</h2>
+	<h1>hello</h1>
+
+</body>
+</html>

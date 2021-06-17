@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		let pTags = document.getElementsByTagName("p")
+		alert('innerHTML' + pTags[0].innerHTML)
+		alert('innerText' + pTags[0].innerText)
+	})
+</script>
+</head>
+<body>
+	<p>
+		내이름은 <Strong>홍길동</Strong>이고, 별명은 <em>의적</em> 입니다.
+	</p>
+</body>
+</html>

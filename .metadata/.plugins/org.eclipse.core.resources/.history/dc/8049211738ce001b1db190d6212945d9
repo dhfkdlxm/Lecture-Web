@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+let books = ['피터팬', '신데렐라', '콩쥐팥쥐', '백설공주']
+
+document.write('배열출력 1번')
+for (var i = 0; i < books.length; i++) {
+	document.write(books[i] + "&nbsp;&nbsp;&nbsp;")
+}
+document.write('<br>')
+document.write('배열 출력 2번')
+
+for(let index in books){
+	document.write(books[i]+ "&nbsp;&nbsp;&nbsp;")
+}
+
+</script>
+</head>
+<body>
+</body>
+</html>

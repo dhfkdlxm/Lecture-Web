@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+tr
+ 
+th
+</style>
+</head>
+<body>
+	<hr>
+	<div>
+		<h2>게시판 목록</h2>
+	</div>
+	<div>
+		<table>
+			<thead>
+				<tr>
+					<th>번호</th>
+					<th>제목</th>
+					<th>글쓴이</th>
+					<th>등록일</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+				</tr>
+				<tr>
+				</tr>
+				<tr>
+				</tr>
+				<tr>
+				</tr>
+			</tbody>
+		</table>
+
+	</div>
+	<hr>
+
+</body>
+</html>

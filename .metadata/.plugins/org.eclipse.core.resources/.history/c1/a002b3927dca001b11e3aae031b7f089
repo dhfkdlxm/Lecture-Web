@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+  var data = prompt('정수를 하나 입력하세요!')
+  num = Number(data)
+  
+  
+  var msg = num + ": " + (num % 2 == 0 ? "짝수" : "홀수")
+   alert(msg)
+</script>
+
+
+</head>
+<body>
+
+</body>
+</html>

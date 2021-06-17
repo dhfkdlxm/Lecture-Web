@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//Class 개념!
+	
+	class Person{
+		//Class 개념에서는 function대신 construtor를 사용함!
+		constructor(name, phone, addr){
+			this.name = name
+			this.phone = phone
+			this.addr = addr
+		}
+		
+		
+	}
+	
+	
+
+	console.log(p)
+	let p = new Person('홍길동', '010-4225-3870', ' 경기도광명시')
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

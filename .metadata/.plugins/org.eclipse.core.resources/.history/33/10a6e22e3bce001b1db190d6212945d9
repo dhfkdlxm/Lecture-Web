@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload = function(){
+		let divTag = document.getElementById('div01')
+		let h1Tag = document.getElementById('h01')
+		let spanTag = document.getElementById('span01')
+	}
+</script>
+</head>
+<body>
+	<div id="div01">
+		<h1 id="h01">
+			<span id="span01">안녕하세요 </span>
+		</h1>
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	let d = new Date()
+	console.log(d)
+	
+	//오늘은 2021년 6월 15일 화요일 입니다.
+	d.today()
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#btn01').click(function() {
+			/*
+			let h1Tag = document.createElement('h1')
+			let text = document.createTextNode('세번째 문장')
+			h1Tag.appendChild(text)
+			document.querySelector('div').appendChild(h1Tag)
+			)
+			 */
+			$('div').append('<h1>세번째 문장</h1>')
+
+		})
+
+		$('#btn02').click(function() {
+			//제일마지막에 항목추가
+			//$('ul').append('<li>검정</li>')
+
+			//제일처음에 추가하고 싶다면?
+			$('ul').prepend('<li>검정</li>')
+
+		})
+
+		$('#btn03').click(function() {
+/* 			$('body').prepend('<h4>추가된 문장</h4>')
+			$('body').prepend('<h3>또 추가된 문장</h3>')
+			$('body').prepend('<h6>마지막으로 문장</h6>')
+			 */
+			//내가 추가하려는 자식이 여려개인경우
+			$('body').prepend(
+					'<h4>추가된 문장</h4>',	'<h3>또 추가된 문장</h3>', '<h6>마지막으로 문장</h6>'
+			)
+			
+			
+		})
+	})
+</script>
+</head>
+<body>
+	<!-- 버튼을 눌렀을때 3번째 h1추가! -->
+	<div>
+		<h1>첫번째 문장</h1>
+		<h1>두번째 문장</h1>
+		<!-- <h1>세번째 문장</h1> -->
+	</div>
+	<h2>색상표</h2>
+	<ul>
+		<li>빨강</li>
+		<li>노랑</li>
+		<li>파랑</li>
+		<li>초록</li>
+	</ul>
+	<button id="btn01">문장 추가</button>
+	<button id="btn02">색상 추가</button>
+	<button id="btn03">본문 추가</button>
+</body>
+</html>

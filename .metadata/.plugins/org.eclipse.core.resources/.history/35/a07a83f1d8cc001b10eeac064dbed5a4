@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//생성자 함수
+	function Person(name, phone, addr){
+		this.name =name
+		this.phone =phone
+		this.addr =addr
+	}
+	
+	
+	new Person('홍길동','010-1111-2222', '경기도 광명시')
+</script>
+</head>
+<body>
+
+</body>
+</html>

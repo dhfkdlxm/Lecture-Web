@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload = function() {
+		let divTag = document.getElementById('div01')
+		let h1Tag = document.getElementById('h01')
+		let spanTag = document.getElementById('span01')
+		//Event Bubbling : 자식에서 호출된 이벤트가 부모(span → h1 → div)로 가면서 동일한 event 부모의 event까지 호출/처리하게 만들어지는 경우
+		//Event Capturing : 부모에서 자식으로 event가 전이?호출
+		divTag.onclick = function() {
+			alert('div click!')
+		}
+
+		h1Tag.onclick = function(e) {
+			alert('h1 click!')
+			
+			e = e || window.event
+			//이벤트 버블링 무효화
+			e.cancelBubble = true
+		}
+
+		spanTag.onclick = function() {
+			alert('span click!')
+			e.cancelBubble = true
+		}
+
+	}
+</script>
+</head>
+<body>
+	<div id="div01">
+		<h1 id="h01">
+			<span id="span01">안녕하세요 </span>
+		</h1>
+	</div>
+
+
+</body>
+</html>

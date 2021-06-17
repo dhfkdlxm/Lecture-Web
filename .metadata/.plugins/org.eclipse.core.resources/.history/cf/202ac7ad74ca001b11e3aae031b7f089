@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	alert(typeof(true))
+
+	data = 12
+	alert(typeof(data))
+	
+	data = 'hello'
+	alert(data)
+	alert(typeof(data))
+</script>
+
+</head>
+
+<body>
+
+</body>
+</html>

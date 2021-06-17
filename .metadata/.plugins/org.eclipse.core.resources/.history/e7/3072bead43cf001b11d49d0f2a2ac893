@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#week {
+	position: absolute;
+	top: 50%;
+	left: 50%
+}
+
+div div {
+	width: 100px;
+	height: 100px;
+	float: left;
+	font-size: 15px;
+	font-weight: 2px;
+	text-align: center;
+	padding: auto;
+	line-height: 100px;
+	text-align: center;
+}
+
+#sun {
+	background-color: red
+}
+
+#mon {
+	background-color: yellow;
+}
+
+#tue {
+	background-color: green;
+}
+
+#wed {
+	background-color: lightblue;
+}
+
+#thu {
+	background-color: pink;
+}
+
+#fir {
+	background-color: orange;
+}
+
+#sat {
+	background-color: purple;
+}
+</style>
+<script type="text/javascript"
+	src="/Lecture-Web/jquery/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('div div').hover(function() {
+			//마우스 들어갈때
+			//효과 : 크기 width height +30, 글씨 변경(수 → 수요일)
+			$(this).animate({
+				width : '+=50px',
+				height : '+=50px',
+				'line-height' : '+=50px',
+				'font-size' : '20px'
+			}, 500).html('+=요일')
+		}, function() {
+			//마우스 나갈대 
+			$(this).animate({
+				width : '-=50px',
+				height : '-=50px',
+				'line-height' : '-=50px',
+				'font-size' : '15px'
+			}, 500)
+		})
+
+	})
+</script>
+</head>
+<body>
+	<div id="week">
+		<div id="sun">일</div>
+		<div id="mon">월</div>
+		<div id="tue">화</div>
+		<div id="wed">수</div>
+		<div id="thu">목</div>
+		<div id="fir">금</div>
+		<div id="sat">토</div>
+	</div>
+</body>
+</html>

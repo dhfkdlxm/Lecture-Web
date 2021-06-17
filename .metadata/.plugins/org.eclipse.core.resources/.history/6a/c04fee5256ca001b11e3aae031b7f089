@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#id{
+	margin-bottom:50px;
+	margin-top: 50px
+}
+
+</style>
+</head>
+<body>
+	<hr>
+	<div id="sub-title">
+	<h2>게시판 목록</h2>
+	</div>
+	<hr>
+
+</body>
+</html>

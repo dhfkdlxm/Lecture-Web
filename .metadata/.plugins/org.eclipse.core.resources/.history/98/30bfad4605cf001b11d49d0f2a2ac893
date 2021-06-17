@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript"
+	src="/Lecture-Web/jquery/js/jquery-3.6.0.min.js">
+	
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		alert('!!!!')
+		$('button').hide()
+	})
+
+
+</script>
+
+</head>
+<body>
+<h2>button 전</h2>
+<input type="button" value="버튼1">
+<button>버튼2</button>
+<h2>button 후</h2>
+
+
+<h2>a Tag 전</h2>
+<a href="http://www.naver.com">네이버</a>
+<a href="http://www.daum.net" target="_blank">다음</a>
+<h2>a Tag 후</h2>
+	<h1>동물종류</h1>
+	<ul>
+		<li>호랑이</li>
+		<li>늑대</li>
+		<li>코끼리</li>
+		<li>여우</li>
+	</ul>
+	<h1>음식종류</h1>
+	<ul>
+		<li>김밥</li>
+		<li>삼겹살</li>
+		<li>육회덮밥</li>
+		<li>초밥</li>
+	</ul>
+
+</body>
+</html>

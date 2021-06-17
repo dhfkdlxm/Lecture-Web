@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		/*
+		let pTags = document.getElementsByTagName("p")
+		alert('innerHTML : ' + pTags[0].innerHTML)
+		alert('innerText : ' + pTags[0].innerText)
+		 */
+		//
+		/*
+		let html = $('p').html()
+		let text = $('p').text()
+		alert('추출된 html : ' + html)
+		alert('추출된 text: ' + text)
+		 */
+		 
+		 //입력된 값을 추출할때 val()
+		$('button').click(function() {
+			/* javascript
+			 let inputTag = document.getElementById("name")
+			 let name = inputTag.value
+			 */
+			//입력된 value값을 뽑아내는 방법 val()
+			let name = $('#name').val()
+
+			alert('입력된 이름 : ' + name)
+		})
+		
+		//a태그 등 속성값을 보고싶을때
+		//document.getElementsByTagName('a')[0].href
+		let addr2 = document.getElementsByTagName('a')[0].getAttribute('href')
+		let addr = $('a').attr('href')
+		alert('자바스크립트 추출된 주소는 : ' + addr2)
+		alert('Jquery 추출된 주소는 : ' + addr)
+		
+
+	})
+</script>
+</head>
+<body>
+	<p>
+		내이름은 <Strong>홍길동</Strong>이고, 별명은 <em>의적</em> 입니다.
+	</p>
+	<p>
+		내이름은 <Strong>홍길순</Strong>이고, 별명은 <em>의적2</em> 입니다.
+	</p>
+
+	이름 :
+	<input type='text' id='name'>
+	<button>입력 완료</button>
+
+	<a href='http://www.naver.com'>네이버</a>
+</body>
+</html>

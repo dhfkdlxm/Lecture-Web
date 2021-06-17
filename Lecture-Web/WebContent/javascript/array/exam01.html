@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	var array = [ 'A', 12, true, undefined, 'hello', null, 12.34 ]
+
+	document.write('array[0] : ' + array[0] + '<br>')
+	document.write('array[1] : ' + array[1] + '<br>')
+	document.write('array[2] : ' + array[2] + '<br>')
+	document.write('array[3] : ' + array[3] + '<br>')
+	document.write('array[4] : ' + array[4] + '<br>')
+
+	document.write('array' + array + '<br>')
+
+	document.write('array배열의 원소 개수 : ' + array.length + '개<br>')
+
+	array[7] = 'add'
+	document.write('add 삽입후 원소의 개수 : ' + array.length + '개<br>')
+
+	array[10] = 'end'
+
+	document.write('end 삽입후  array : ' + array + '<br>')
+
+	array[array.length] = '추가...'
+	array.push('추가2')
+	document.write('array : ' + array + '<br>')
+	//stack queue list graph
+	//stack : 
+   //push  pop?
+	var temp = array.pop();	   
+	document.write('삭제된 데이터 : ' + temp + '<br>')
+	document.write('array : ' + array + '<br>')
+	document.write('type : ' + typeof(array) + '<br>')
+	
+	var str = "hello world"
+	document.write('문자열의 길이 : ' + str.length + '<br>')
+	
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

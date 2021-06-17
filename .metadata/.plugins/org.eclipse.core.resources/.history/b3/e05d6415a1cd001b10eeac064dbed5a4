@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+//Body의 내용이 다 로딩이 끝나고 나면 스크립트 내용이 자동으로 호출되도록 OnLoad해주는것!
+
+</script>
+</head>
+<body onload>
+	<h2>Hello</h2>
+	<h1>Hi</h1>
+	<img src="https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png">
+	<img src="https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png">
+	<img src="https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png">
+	<img src="https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png">
+	<img src="https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png">
+</body>
+</html>

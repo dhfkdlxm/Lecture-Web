@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload = function() {
+
+		//표준이벤트 모델 DOM level2 : addEventListener(eventName, handler, useCapture), removeEventListener() =>이벤트를 추가 시켰다가 없앨수도 있음!
+		let btn01 = document.getElementById('btn01')
+		btn01.addEventListener('click', function() {
+			//클릭이라는 이벤트가 발생했을때, 이함수를 시행시키겠다.(이벤트추가!)
+			alert('btn01 click')
+		})
+		let btn02 = document.getElementById('btn02')
+		let span = document.getElementById('span01')
+
+		btn02.addEventListener('click', function(){
+			alert('btn02 click')
+		})
+		span.addEventListener('click', function(){
+			alert('span click')
+		})
+	}
+</script>
+</head>
+<body>
+	<button id="btn01">click1</button>
+	<button id="btn02">
+		<span id="span01">click2</span>
+	</button>
+</body>
+</html>

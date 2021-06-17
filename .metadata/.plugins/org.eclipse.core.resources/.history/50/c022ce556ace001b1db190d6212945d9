@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- <script type="text/javascript" src="js/jquery-3.6.0.min.js">
+//로딩하는 라이브러리가 3개면 각각  스크립트를 따로 써야함
+</script> -->
+
+</script>
+<script  src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
+<script type="text/javascript">
+	/* window.onload = function(){
+	
+	 } */
+	$(document).ready(function() {
+		alert('ready...')
+	})
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//HomeTag사용자가 입력받은 클라이언트가 서버가 요청할때 자신이 가지고 있는 임의의 값들을
+	//서버에 전달 하고 싶은것!
+	//보통은 input tag나오면 formTag 로 묶음
+	function whenSubmit() {
+		let f = document.inputF
+		//공백 안됨!
+		if (f.id.value == '') {
+			alert('아이디를 입력하세요')
+
+			return false
+		}
+		if (f.pwd.value != f.pwdCheck.value) {
+			alert('패스워드가 서로 다릅니다')
+			return false
+		}
+
+		return true
+	}
+</script>
+</head>
+<body>
+	<!-- exam08.html?사용자(클라이언트)가 서버에 전달 값들-->
+	<form action="exam08.html" name="inputF"
+		onsubmit="return whenSubmit()">
+		아이디 : <input type="text" name="id"><br> 패스워드 : <input
+			type="password" name="pwd"><br> 패스워드 확인 : <input
+			type="password" name="pwdCheck"><br> <input
+			type="submit" value="전송">
+	</form>
+
+</body>
+</html>

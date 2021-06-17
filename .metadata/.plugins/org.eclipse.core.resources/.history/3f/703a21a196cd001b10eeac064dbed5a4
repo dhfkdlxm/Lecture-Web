@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	let nums = [ 10, 20, 30, 40, 50 ]
+	document.write('nums : ' + nums + '<br>')
+
+	/*
+	let copyNums = []
+	for(let num of nums){
+		copyNums.push(num + 100)
+	}*/
+	let copyNums = nums.map(function(element, index) {
+		if (index != 2)
+			return element + 100
+		else
+			return element
+	})
+
+	document.write('copyNums : ' + copyNums + '<br>')
+
+	nums = [ 5, 23, 1, 676, 34, 67, 8, 34, 12, 56 ]
+
+	let evenNums = nums.filter(function(element, index, array) {
+		return element % 2 == 0
+	})
+	let evenNums2 = nums.map(function(element, index) {
+		return element % 2 == 0
+	})
+	document.write('nums : ' + nums + '<br>')
+	document.write('evenNums : ' + evenNums + '<br>')
+	document.write('evenNums2 : ' + evenNums2 + '<br>')
+
+	//every : 모든 조건을 만족하는 집합
+	let bool = nums.every(function(element) {
+		return element > 0
+	})
+	document.write('양의 정수 집합 판단 : ' + bool + '<br>')
+	nums = [ 3, 5, 7, 9 ]
+	//some : 내가원하는 조건 한개 이상 존재하면 true
+	bool = nums.some(function(element) {
+		return element % 2 == 0
+	})
+	document.write('짝수 포함 여부 : ' + bool + '<br>')
+
+	
+	
+	//배열 합구하기
+	nums = [ 1, 2, 3, 4, 5 ]
+	let sum = 0
+	for(const data of nums){
+		sum += data
+	}
+	document.write(nums + '총합 : ' +  sum + '<br>')
+	
+	//reduce? : 데이터가 하나만 남을때까지 다 더해주는 함수 
+	nums.reduce(function(){
+		console.log(arguments)
+	})
+	
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

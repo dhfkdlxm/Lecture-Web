@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		//$(tag).on() : 각각의 이벤트를 추가시킬수 있는 역할로, on({여기에는 자바스크립트 객체가 나옴})
+		//**자바스크립트 객체 
+		/*
+				let p = {
+				'name' :'hong'
+				'phone' : '010-'
+		}
+		
+		*/
+		$('input').on({
+			'keydown' : function() {
+				$(this).css('color', 'orange')
+			}
+
+		})
+
+		/*
+		//키보드를 누를때~ 함수작동
+		$('input').keydown(function() {
+			$(this).css('color', 'orange')
+		})
+		//키보드를 뗄때~ 함수 작동
+		$('input').keyup(function() {
+			$(this).css('color', 'black')
+		})
+		
+		//마우스가 가게되면,(focus하게되면)
+		$('input').focus(function() {
+			$(this).css('border', '2px dotted red')
+			$(this).css('background-color', 'lightgray')
+		})
+		//마우스가 떠나가면~
+		$('input').blur(function(){
+			$(this).css('border', '1px solid black')
+			$(this).css('background-color', 'white')
+		})
+		 */
+	})
+</script>
+</head>
+<body>
+	이름 :
+	<input type="text">
+	<br> 전화번호 :
+	<input type="text">
+	<br>
+</body>
+</html>

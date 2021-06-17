@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	let inputNum = prompt("10~100사이의 숫자를 입력하세요!")
+	console.log(inputNum)
+
+	for (var i = 1; i < inputNum+1; i++) {
+		if(i%10 !=0 && i%10%3==0){
+			alert("짝")
+		}else{
+			alert(i)	
+		}
+		
+		
+	}
+
+	/*  
+	 10~100사이의 숫자를 입력하세요 : 32
+	 1
+	 2
+	 짝
+	 4
+	 5
+	 짝
+	 7
+	 8
+	 짝
+	 뽀숑
+	 11
+	 12
+	 짝
+	 ...
+	 18
+	 짝
+	 뽀뽀숑
+	 ...
+	 28
+	 짝
+	 짝뽀뽀뽀숑
+	 짝
+	 짝
+	 */
+</script>
+</head>
+<body>
+
+</body>
+</html>

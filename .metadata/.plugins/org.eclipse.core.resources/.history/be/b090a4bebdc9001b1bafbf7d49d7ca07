@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+div{
+width:500px;
+height:500px;
+background-color: red;
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+	<div>
+		<img alt="" src="http://localhost:9999/Lecture-Web/css/images/Cat.png">
+	</div>
+</body>
+</html>

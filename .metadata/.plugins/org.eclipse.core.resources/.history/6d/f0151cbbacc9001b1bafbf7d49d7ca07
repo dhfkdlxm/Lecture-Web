@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+div {
+	width:100px;
+	heght:100px;	
+}
+
+#div01 {
+	background-color: red;
+}
+
+#div02 {
+	background-color: blue;
+}
+</style>
+</head>
+<body>
+	<!--  100x100 빨간사각형, 파란사각형 그리기 -->
+	<div id="div01">첫번째 사각형</div>
+	<div id="div02">두번째 사각형</div>
+
+
+</body>
+</html>

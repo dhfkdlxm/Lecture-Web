@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var name = prompt('이름을 입력하세요!')
+	var age = prompt('나이를 입력하세요!')
+	alert(`${ name }의 10년 후의 나이는? ${ age+10 }세 입니다.`)
+	
+	
+</script>
+
+
+
+
+</head>
+<body>
+</body>
+</html>

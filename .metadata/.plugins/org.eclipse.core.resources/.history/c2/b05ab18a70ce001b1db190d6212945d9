@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		alert('!!!')
+		//$('ul li').hide()
+		//$('ul li:first').hide() //ul 밑에 첫번째 li만 지워라! but, 호랑미나 지어짐..ㅠ
+		//왜냐면 ul li의 의미가 ul밑에 li의 전체 배열로 생성!
+		//따라서 그룹별로 첫번째 li을 가져와야한다는 의미로 first-child  속성 사용
+		$('ul li:first-child').hide()
+		
+	})
+</script>
+</head>
+<body>
+	<h1>동물종류</h1>
+	<ul>
+		<li>호랑이</li>
+		<li>늑대</li>
+		<li>코끼리</li>
+		<li>여우</li>
+	</ul>
+	<h1>음식종류</h1>
+	<ul>
+		<li>김밥</li>
+		<li>삼겹살</li>
+		<li>육회덮밥</li>
+		<li>초밥</li>
+	</ul>
+
+
+</body>
+</html>

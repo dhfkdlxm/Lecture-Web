@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	if (confirm("네이버로 이동하시겠습니까?")) {
+		//확인 받은후 네이버로 이동시켜야함
+		//이동 시켜주는 객체가 location 임!
+
+		//location.href = "http://www.naver.com"
+
+		//location = "http://naver.com"
+
+		//location.assign("http://www.naver.com")
+
+		//replace : 페이지 전환! back button이 안먹힘(조심해서 사용해야함)
+		location.replace("http://www.naver.com")
+	}
+</script>
+</head>
+<body>
+</body>
+</html>

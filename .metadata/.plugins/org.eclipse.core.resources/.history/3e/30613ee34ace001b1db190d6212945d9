@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- form태그의 name -->
+<form name="inputForm">
+		당신의 취미는 무엇이죠?<br>
+		<input type="checkbox" name="hobby">음악감상<br>
+		<input type="checkbox" name="hobby">영화감상<br>
+		<input type="checkbox" name="hobby">독서<br>
+		<input type="checkbox" name="hobby">게임<br>
+		
+</form>
+</body>
+</html>

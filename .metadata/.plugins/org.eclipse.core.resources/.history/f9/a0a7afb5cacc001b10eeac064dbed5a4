@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function func01(){
+		alert(arguments[0] + ' : ' + arguments[1] + ':' + arguments[2] )
+	}
+	
+	function func02(...numbers){
+		
+	}
+	
+	func01(1 , 2 , 3)
+	func02(1,2,3)
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

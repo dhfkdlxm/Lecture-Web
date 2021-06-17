@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		setInterval(function () {
+			let msg  = document.getElementsByTagName('h1')[0].innerText += '★'
+			msg 
+			
+		}, 1000);
+		
+		
+		
+	})
+	
+
+</script>
+</head>
+<body>
+<h1>start : </h1>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript"
+	src="/Lecture-Web/jquery/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('input').keydown(function() {
+			$(this).css('color', 'orange')
+		})
+		
+		$('input').keyup(function(){
+			$(this).css('color','black')
+		})
+		$('input').focus(function()({
+			
+			})
+		})
+			
+		
+</script>
+</head>
+<body>
+	이름 :
+	<input type="text">
+	<br> 전화번호 :
+	<input type="text">
+	<br>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+	document.write('<h2>Hello Javascript</h2>');
+</script>
+</head>
+<body>
+<h2>Hello html</h2>
+</body>
+</html>
