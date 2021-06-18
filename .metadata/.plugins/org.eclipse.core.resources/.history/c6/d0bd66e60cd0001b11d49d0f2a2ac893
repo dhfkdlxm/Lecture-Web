@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<
+<script type="text/javascript"
+	src="/Lecture-Web/jquery/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+
+	})
+	
+	//구현할 기능
+	//글씨 크기(Select로~)
+	//글씨체(select)
+</script>
+</head>
+<body>
+	<div class="title">
+		<label for="exampleFormControlInput1" class="form-label">Email	address</label> <input type="email" class="form-control"
+			id="exampleFormControlInput1" placeholder="name@example.com">
+	</div>
+	<div class="mb-3">
+		<label for="exampleFormControlTextarea1" class="form-label">Example	textarea</label>
+		<textarea class="form-control" id="exampleFormControlTextarea1" 	rows="3"></textarea>
+	</div>
+</body>
+</html>

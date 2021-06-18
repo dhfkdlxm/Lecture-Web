@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title> <
+<script type="text/javascript"
+	src="/Lecture-Web/jquery/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+
+	})
+
+	//구현할 기능
+	//글씨 크기(Select로~)
+	//글씨체(select)
+	//글씨 굵게 / 이태리, 언더바, 취소선, 글자색 변경, 글자 배경색 변경
+	//글씨  좌, 가운데, 우로정렬
+	//파일 첨부, 표 추가
+</script>
+</head>
+<body>
+	<div>
+		<select>
+			<option selected>선택</option>
+			<option value="10">10pt</option>
+			<option value="11">11pt</option>
+			<option value="12">12pt</option>
+			<option value="13"></option>
+		</select>
+	</div>
+	<div class="title">
+		<label for="exampleFormControlInput1" class="form-label">제 목</label> 
+		<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+	</div>
+	<div class="">
+		<label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+		<textarea class="form-control" id="exampleFormControlTextarea1"
+			rows="3"></textarea>
+	</div>
+</body>
+</html>

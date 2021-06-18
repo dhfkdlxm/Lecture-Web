@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+img {
+	width: 200px;
+	height: 200px;
+	display : inline-block;
+}
+
+span {
+	float: left
+}
+
+button {
+	height: 200px;
+	float: left;
+}
+</style>
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#btn01').click(function () {
+			//$('body').append('<img src="/Lecture-Web/css/images/play.png">')
+			//$('img').first().appendTo('body')
+			$('img').first().appendTo('span')
+		})
+		$('#btn02').click(function () {
+			//$('body').append('<img src="/Lecture-Web/css/images/play.png">')
+			//$('img').first().appendTo('body')
+			$('img').last().prependTo('span')
+		})
+		
+		setInterval(() => {
+			$('#btn02').trigger('click')
+		}, 200);
+
+	})
+</script>
+</head>
+<body>
+	<button id="btn01">prev</button>
+	<span> <img src="/Lecture-Web/css/images/Cat.png"> <img
+		src="/Lecture-Web/css/images/dog.jpg"> <img
+		src="/Lecture-Web/css/images/o9.jpg"> <img
+		src="/Lecture-Web/css/images/nope.gif">
+	</span>
+	<button id="btn02">next</button>
+</body>
+</html>

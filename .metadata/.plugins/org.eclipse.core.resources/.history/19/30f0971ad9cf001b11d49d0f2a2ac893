@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+img {
+	width: 200px;
+	height: 200px;
+}
+#btn01{
+height:200px;'
+}
+#btn02{
+height:200px;
+}
+</style>
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#btn01').click(function name() {
+			//$('body').append('<img src="/Lecture-Web/css/images/play.png">')
+			//$('img').first().appendTo('body')
+			$('img').first().appendTo('div')
+		})
+		$('#btn02').click(function name() {
+			//$('body').append('<img src="/Lecture-Web/css/images/play.png">')
+			//$('img').first().appendTo('body')
+			$('img').last().prependTo('div')
+		})
+
+	})
+</script>
+</head>
+<body>
+	<button id = "btn01">pre</button>
+	<div>
+		<img src="/Lecture-Web/css/images/Cat.png"> 
+		<img src="/Lecture-Web/css/images/dog.jpg"> 
+		<img src="/Lecture-Web/css/images/o9.jpg"> 
+		<img 	src="/Lecture-Web/css/images/nope.gif">
+	</div>
+	<button id = "btn02">next</button>
+</body>
+</html>

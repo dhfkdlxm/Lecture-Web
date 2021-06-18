@@ -1,0 +1,53 @@
+package kr.ac.kopo.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class MethodServlet extends HttpServlet {
+	
+	//GET http://localhost:9999/Lecture-Web/method?id=aaa
+	
+	@Override
+	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		String method = request.getMethod();
+		
+		//url을 가져오는 메소드~
+		StringBuffer url = request.getRequestURL();
+		String uri = request.getRequestURI();
+		String id = request.getParameter("id");
+		
+		//client 에게 응답
+		
+		PrintWriter out = response.getWriter();//응답을 해주려면 IO가 필요하고, IO를위해서 response객체에 getWrite()를 얻어옴!
+		out.println("<html>");
+		out.println("		<head>");
+		out.println("		  		<meta charset=\"UTF-8\">");
+		out.println("		  		<title>메소드 호출방식</title>");
+		out.println("		</head>");
+		out.println("		<body>");
+		out.println("				<h1>안녕하세요~메소드 호출 응답합니다!</h1>	");		
+		out.println("		</body>");
+		out.println("</html>");
+		
+		out.flush();
+		out.close();
+		
+		response.
+		
+		
+		
+		/*
+		 * System.out.println("사용자가 입력한 ID 는 : " + id); System.out.println("method : " +
+		 * method); System.out.println("URL : " + url.toString());
+		 * System.out.println("URI : " + uri);
+		 */
+		
+	}
+
+}

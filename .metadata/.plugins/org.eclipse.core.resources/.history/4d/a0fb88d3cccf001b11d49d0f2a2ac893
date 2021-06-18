@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#ancester * {
+	display : block;
+	border : 1px solid red;
+	margin : 10px;
+	padding : 10px;
+}
+</style>
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+
+	})
+</script>
+</head>
+<body>
+	<div id = 'ancester'>
+		<div id = "div01">div01
+		<ul>ul
+		<li>li
+			<span>span</span>
+		</li>
+		</ul>
+		</div>
+		<div>
+		<p>
+		<span>span</span>
+		</p>
+		</div>
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="/Lecture-Web/method" method="get">
+		<input type="submit" value="get()방식 호출">
+	</form>
+</body>
+</html>

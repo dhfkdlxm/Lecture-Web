@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+img {
+	width: 200px;
+	height: 200px;
+}
+</style>
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	
+</script>
+</head>
+<body>
+	<img alt="" src="/Lecture-Web/css/images/Cat.png">
+	<img alt="" src="/Lecture-Web/css/images/dog.jpg">
+	<img alt="" src="/Lecture-Web/css/images/o9.jpg">
+	<img alt="" src="/Lecture-Web/css/images/nope.gif">
+	<br>
+	<br>
+	<button>클릭</button>
+</body>
+</html>
