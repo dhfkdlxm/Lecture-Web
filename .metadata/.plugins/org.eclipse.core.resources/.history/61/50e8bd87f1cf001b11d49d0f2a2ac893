@@ -1,5 +1,0 @@
-package kr.ac.kopo.servlet;
-
-public class HelloServlet extends HttpServlet{
-
-}

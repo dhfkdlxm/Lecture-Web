@@ -1,0 +1,7 @@
+전체 게시판 조회 		/board/list.do
+상세 게시글 조회 		/board/detail.do
+게시글 등록 			/board/writeForm.do
+
+
+로그인					/login.do
+로그인 처리 			/loginProcess.do
